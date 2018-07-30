@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Services</title>
+  <link rel="stylesheet" type"text/css" href="styles.css">
+</head>
+<body>
+  <div id="header">
+    <ul id="header-title">
+    <li><a id="header1" href="index.html">Bizzy</li>
+      <li><a id="header2" href="index.html">Business Solutions</li>
+      </ul>
+    <ul id="header-nav">
+      <li><a href="contact.html">Contact Us</li>
+      <li><a href="about.html">About</li>
+      <li><a href="services.html">Services</li>
+      <li><a href="index.html">Home</li>
+          </ul>
+        </div><div id="content13">
+        <p><strong>Services</strong><br>App Development<br>Web Development<br>Tax Services<br>Accounting Services<br>Marketing Management<br>Technical Marketing<br>Business Investments<br>Data Analysis</p>
+</div>
+<div id="content23"></div>
+<div class="images1" style="max-width: 800px" style="max-width:500px">
+  <img class="mySlides w3-animate-fading" src="images/mark.png" style="width:100%">
+  <img class="mySlides w3-animate-fading" src="images/inv.png" style="width:100%">
+  <img class="mySlides w3-animate-fading" src="images/acc10.png" style="width:100%">
+  <img class="mySlides w3-animate-fading" src="images/web.png" style="width:100%">
+</div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}
+    x[myIndex-1].style.display = "block";
+    setTimeout(carousel, 8000);
+}
+</script>
+
+<footer>
+  <div id="footer_container">
+    <p class="copyright_text">&copy; copyright 2018 bizzy business solutions.</br> designed and developed by bizzy business solutions.</p>
+<ul class="social">
+  <li><a href="#">twitter.</a></li>
+  <li><a href="#">facebook.</a></li>
+  <li><a href="#">instagram.</a></li>
+  <li><a href="#">pinterest.</a></li>
+</ul>
+</div>
+</footer>
+
+        </body>
+        </html>

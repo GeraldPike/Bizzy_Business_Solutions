@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>About Us</title>
+  <link rel="stylesheet" type"text/css" href="styles.css">
+</head>
+<body>
+  <div id="header">
+    <ul id="header-title">
+    <li><a id="header1" href="index.html">Bizzy</li>
+      <li><a id="header2" href="index.html">Business Solutions</li>
+      </ul>
+    <ul id="header-nav">
+      <li><a href="contact.html">Contact Us</li>
+      <li><a href="about.html">About</li>
+      <li><a href="services.html">Services</li>
+      <li><a href="index.html">Home</li>
+          </ul>
+        </div>
+        <div id="content">
+          <h1> About Us</h1>
+          <img src="images/tower.png"; align="middle">
+          <p>
+Pike Business Solutions is a global business solutions
+company specializing in the delivery of Web development,
+app development,accounting services, tax services,
+marketing management, business investments, technical
+marketing(selling tools) and data analysis.
+Pike Business Solutions prides itself on understanding
+the client environment and tailor-making world-class
+solutions to further the business goals of our customers,
+helping them to take their Companies to a next level. Pike
+Business Solutions chooses industry leaders as development
+partners offering solutions. Pike Business Solutions vision
+is to become a global leader in providing innovative and
+sustainable solutions to a connected world. We are known
+to team up with our clients and have their best interests
+at heart.  We will always explore all avenues to maximize
+your business’s performance, reduce costs where possible
+and offer a lucrative return on your investment.  The
+Company was founded by Gerald Pike who has a passion for
+solving complex business problems with innovative technology
+solutions. The company specializes in the design and delivery
+of a range of quality business solutions.</br>
+<br>
+</p>
+</div>
+<div id="content2">
+  <p><strong>Services</strong><br>App Development<br>Web Development<br>Tax Services<br>Accounting Services<br>Marketing Management<br>Technical Marketing<br>Business Investments<br>Data Analysis</p>
+</div>
+<div class="images1" style="max-width: 500px" style="max-width:500px">
+  <img class="mySlides w3-animate-fading" src="images/acc10.png" style="width:100%">
+  <img class="mySlides w3-animate-fading" src="images/inv.png" style="width:100%">
+  <img class="mySlides w3-animate-fading" src="images/mark.png" style="width:100%">
+  <img class="mySlides w3-animate-fading" src="images/web.png" style="width:100%">
+</div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}
+    x[myIndex-1].style.display = "block";
+    setTimeout(carousel, 8000);
+}
+</script>
+
+<footer>
+  <div id="footer_container">
+    <p class="copyright_text">&copy; copyright 2018 bizzy business solutions.</br> designed and developed by bizzy business solutions.</p>
+<ul class="social">
+  <li><a href="#">twitter.</a></li>
+  <li><a href="#">facebook.</a></li>
+  <li><a href="#">instagram.</a></li>
+  <li><a href="#">pinterest.</a></li>
+</ul>
+</div>
+</footer>
+
+</body>
+</html>
